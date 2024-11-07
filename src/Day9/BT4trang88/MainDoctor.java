@@ -3,7 +3,6 @@ package Day9.BT4trang88;
 import Day9.BT4trang88.data.Doctor;
 import Day9.BT4trang88.management.DoctorManagement;
 
-
 import static Day9.BT4trang88.util.InputUtils.*;
 
 

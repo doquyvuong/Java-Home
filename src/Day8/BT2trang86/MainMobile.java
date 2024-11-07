@@ -4,9 +4,6 @@ package Day8.BT2trang86;
 import Day8.BT2trang86.management.MobilesTest;
 import Day8.BT2trang86.util.InputUtils;
 
-import static Day8.BT2trang86.util.InputUtils.inputString;
-
-
 public class MainMobile {
     public static void main(String[] args) {
         MobilesTest prdMobile = new MobilesTest() ;
