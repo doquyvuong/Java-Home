@@ -11,7 +11,7 @@ public class ConnectionDB {
                 // 1 là url: jdbc:mysql://localhost:3306/qlsv -> qlsv tên database
                 // 2 là username
                 // 3 là password
-                DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels", "root", "<Thêm mật khẩu của bạn vào đây>");
+                DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels", "root", "dovuong99");
         System.out.println(connection);
 
         String query = "select * from products"; // Tạo query
