@@ -34,7 +34,7 @@ public class MyConnection {
         this.port = "3306";
         this.database = "classicmodels";
         this.username = "root";
-        this.password = "dovuong99";
+        this.password = "Anubis99";
         this.url = "jdbc:mysql://" + this.ip + ":" + this.port + "/" + this.database;
         //jdbc:mysql://localhost:3306/classicmodels
         // Mỗi khi mà dùng new MyConnection -> thuộc tính là mặc định

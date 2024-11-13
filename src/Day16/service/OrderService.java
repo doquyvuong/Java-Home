@@ -30,18 +30,7 @@ public class OrderService {
     public void orderFunction(Account account, Customer customer) {
         String role = account.getRole();
         if (role.equalsIgnoreCase("admin")) {
-//            adminFunction();
-            // Tạo menu cho admin,
-            // 1. Xem tất cả order của người dùng
-            // 2. Xem chi tiết order
-            // 3. Chuyển trạng thái order từ Ordered -> Shipped
-
-            // Để test được data, thêm 1 user
-            // rồi đặt hàng, nhiều đơn hàng,
-
-            // tạo user khác, đặt đơn hàng tiếp
-            // tạo 1 user khác, vào db chuyển role thành admin
-            // test.
+            adminFunction(customer);
         } else {
             userFunction(customer);
         }
@@ -67,6 +56,13 @@ public class OrderService {
                     displayDetailOrder(foundOrder, orderDetails);
                     break;
                 case 3:
+                    int orderNumberToChange = InputUtils.inputDigit(1, 100000, "Nhập order number: ");
+                    Order foundOrderToChange = findByOrderNumber(orderNumberToChange);
+                    if(foundOrderToChange == null){
+                        System.out.println("Order number không tồn tại");
+                        break;
+                    }
+                   changeOrderStatus(orderNumberToChange);
                     break;
                 default:
                     System.out.println("-- Quay lại");
@@ -120,9 +116,27 @@ public class OrderService {
         }
     }
 
+    private Order changeOrderStatus(int orderNumberToChange) {
+        String query = "UPDATE orders SET status = ? WHERE orderNumber = ? ";
+        try (Connection connection = myConnection.connect();
+             PreparedStatement ps = connection.prepareStatement(query)) {
+            ps.setString(1, "shipped");
+            ps.setInt(2, orderNumberToChange);
+
+            int rowsAffected = ps.executeUpdate();
+            if (rowsAffected > 0) {
+                return new Order(orderNumberToChange, "shipped");
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }
+        return null;
+    }
+
+
+
     private Order findByOrderNumber(int orderNumber){
         String query = "SELECT * FROM orders WHERE orderNumber = ?";
-        ResultSet resultSet = null;
         try (Connection connection = myConnection.connect();
              PreparedStatement ps = connection.prepareStatement(query)) {
             ps.setInt(1, orderNumber);

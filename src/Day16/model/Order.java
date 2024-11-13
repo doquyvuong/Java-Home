@@ -12,6 +12,11 @@ public class Order {
     private String comments;
     private int customerNumber;
 
+    public Order(int orderNumber, String status) {
+        this.orderNumber = orderNumber;
+        this.status = status;
+    }
+
     public Order(int orderNumber, Date orderDate, Date requiredDate, Date shippedDate, String status, String comments) {
         this.orderNumber = orderNumber;
         this.orderDate = orderDate;
