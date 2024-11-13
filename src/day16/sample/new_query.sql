@@ -518,7 +518,7 @@ CREATE TABLE `accounts`
     `id`       INT          NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `username` varchar(255) NOT NULL UNIQUE,
     `password` varchar(255) NOT NULL,
-    `role`     varchar(20) DEFAULT 'user'
+    `role`     varchar(20) DEFAULT 'admin'
 
 )ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT = 1000;
 
