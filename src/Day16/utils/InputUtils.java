@@ -1,4 +1,4 @@
-package day16.utils;
+package Day16.utils;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

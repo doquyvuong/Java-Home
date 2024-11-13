@@ -1,21 +1,21 @@
-package day16.service;
+package Day16.service;
 
-import day16.db.MyConnection;
-import day16.model.Account;
-import day16.model.Customer;
-import day16.model.Order;
-import day16.model.OrderDetail;
-import day16.model.cart.OrderedProduct;
-import day16.utils.InputUtils;
+import Day16.db.MyConnection;
+import Day16.model.Account;
+import Day16.model.Customer;
+import Day16.model.Order;
+import Day16.model.OrderDetail;
+import Day16.model.cart.OrderedProduct;
+import Day16.utils.InputUtils;
 
 import java.sql.*;
 import java.util.List;
 import java.util.Map;
 
-import static day16.utils.menu.AdminMenuUitls.LIMIT_MENU_ADMIN_ORDER;
-import static day16.utils.menu.AdminMenuUitls.orderAdminMenu;
-import static day16.utils.menu.UserMenuUitls.LIMIT_MENU_USER_ORDER;
-import static day16.utils.menu.UserMenuUitls.orderUserMenu;
+import static Day16.utils.menu.AdminMenuUitls.LIMIT_MENU_ADMIN_ORDER;
+import static Day16.utils.menu.AdminMenuUitls.orderAdminMenu;
+import static Day16.utils.menu.UserMenuUitls.LIMIT_MENU_USER_ORDER;
+import static Day16.utils.menu.UserMenuUitls.orderUserMenu;
 
 public class OrderService {
 

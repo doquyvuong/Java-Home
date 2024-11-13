@@ -1,6 +1,6 @@
-package day16.service;
+package Day16.service;
 
-import day16.db.MyConnection;
+import Day16.db.MyConnection;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

@@ -1,20 +1,20 @@
-package day16.service;
+package Day16.service;
 
-import day16.db.MyConnection;
-import day16.model.Account;
-import day16.utils.InputUtils;
+import Day16.db.MyConnection;
+import Day16.model.Account;
+import Day16.utils.InputUtils;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static day16.utils.HeaderDisplayUtils.displayAccountHeader;
-import static day16.utils.menu.AdminMenuUitls.LIMIT_MENU_ADMIN_ACCOUNT;
-import static day16.utils.menu.AdminMenuUitls.accountAdminMenu;
-import static day16.utils.menu.CommonMenuUtils.LIMIT_MENU_ACCOUNT;
-import static day16.utils.menu.CommonMenuUtils.loginMenu;
-import static day16.utils.menu.UserMenuUitls.LIMIT_MENU_USER_ACCOUNT;
-import static day16.utils.menu.UserMenuUitls.accountUserMenu;
+import static Day16.utils.HeaderDisplayUtils.displayAccountHeader;
+import static Day16.utils.menu.AdminMenuUitls.LIMIT_MENU_ADMIN_ACCOUNT;
+import static Day16.utils.menu.AdminMenuUitls.accountAdminMenu;
+import static Day16.utils.menu.CommonMenuUtils.LIMIT_MENU_ACCOUNT;
+import static Day16.utils.menu.CommonMenuUtils.loginMenu;
+import static Day16.utils.menu.UserMenuUitls.LIMIT_MENU_USER_ACCOUNT;
+import static Day16.utils.menu.UserMenuUitls.accountUserMenu;
 
 public class AccountService {
 

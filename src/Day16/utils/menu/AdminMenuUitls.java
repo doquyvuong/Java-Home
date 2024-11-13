@@ -1,4 +1,4 @@
-package day16.utils.menu;
+package Day16.utils.menu;
 
 public class AdminMenuUitls {
 

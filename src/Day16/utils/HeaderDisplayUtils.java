@@ -1,4 +1,4 @@
-package day16.utils;
+package Day16.utils;
 
 public class HeaderDisplayUtils {
     public static void displayProductHeader() {

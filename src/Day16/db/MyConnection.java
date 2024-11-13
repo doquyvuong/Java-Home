@@ -1,4 +1,4 @@
-package day16.db;
+package Day16.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

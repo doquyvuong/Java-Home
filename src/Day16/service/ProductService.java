@@ -1,20 +1,20 @@
-package day16.service;
+package Day16.service;
 
-import day16.db.MyConnection;
-import day16.model.Account;
-import day16.model.Customer;
-import day16.model.Product;
-import day16.utils.InputUtils;
+import Day16.db.MyConnection;
+import Day16.model.Account;
+import Day16.model.Customer;
+import Day16.model.Product;
+import Day16.utils.InputUtils;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static day16.utils.HeaderDisplayUtils.displayProductHeader;
-import static day16.utils.menu.AdminMenuUitls.LIMIT_MENU_ADMIN_PRODUCT;
-import static day16.utils.menu.AdminMenuUitls.productAdminMenu;
-import static day16.utils.menu.UserMenuUitls.LIMIT_MENU_USER_PRODUCT;
-import static day16.utils.menu.UserMenuUitls.productUserMenu;
+import static Day16.utils.HeaderDisplayUtils.displayProductHeader;
+import static Day16.utils.menu.AdminMenuUitls.LIMIT_MENU_ADMIN_PRODUCT;
+import static Day16.utils.menu.AdminMenuUitls.productAdminMenu;
+import static Day16.utils.menu.UserMenuUitls.LIMIT_MENU_USER_PRODUCT;
+import static Day16.utils.menu.UserMenuUitls.productUserMenu;
 
 // ProductManagement
 public class ProductService {
