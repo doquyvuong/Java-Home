@@ -1,9 +1,9 @@
 package Day13;
 
 
-import Day15.db.model.Product;
-import Day15.db.service.ProductService;
-import Day15.db.utils.InputUtils;
+import Day15.model.Product;
+import Day15.service.ProductService;
+import Day15.utils.InputUtils;
 
 import java.util.Random;
 

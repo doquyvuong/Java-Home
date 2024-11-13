@@ -1,15 +1,15 @@
-package Day15.db.service;
+package Day15.service;
 
 
-import Day15.db.db.MyConnection;
-import Day15.db.model.Product;
-import Day15.db.utils.InputUtils;
+import Day15.db.MyConnection;
+import Day15.model.Product;
+import Day15.utils.InputUtils;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static Day15.db.utils.MenuUtils.*;
+import static Day15.utils.MenuUtils.*;
 
 // ProductManagement
 public class ProductService {

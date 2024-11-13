@@ -1,8 +1,8 @@
-package Day15.db;
+package Day15;
 
 
-import Day15.db.service.AccountService;
-import Day15.db.service.ProductService;
+import Day15.service.AccountService;
+import Day15.service.ProductService;
 
 public class MainAccount {
 

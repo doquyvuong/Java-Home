@@ -1,14 +1,14 @@
-package Day15.db.service;
+package Day15.service;
 
 
 
-import Day15.db.db.MyConnection;
-import Day15.db.utils.InputUtils;
+import Day15.db.MyConnection;
+import Day15.utils.InputUtils;
 
 import java.sql.*;
 
-import static Day15.db.utils.MenuUtils.LIMIT_MENU_ACCOUNT;
-import static Day15.db.utils.MenuUtils.accountMenu;
+import static Day15.utils.MenuUtils.LIMIT_MENU_ACCOUNT;
+import static Day15.utils.MenuUtils.accountMenu;
 
 
 public class AccountService {

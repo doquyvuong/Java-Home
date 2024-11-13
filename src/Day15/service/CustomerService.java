@@ -1,7 +1,7 @@
-package Day15.db.service;
+package Day15.service;
 
 
-import Day15.db.db.MyConnection;
+import Day15.db.MyConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

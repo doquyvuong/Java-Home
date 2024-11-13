@@ -1,4 +1,4 @@
-package Day15.db.model;
+package Day15.model;
 
 public class ProductLine {
 
