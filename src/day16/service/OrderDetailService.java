@@ -1,7 +1,7 @@
-package day16.sample.service;
+package day16.service;
 
-import day16.sample.db.MyConnection;
-import day16.sample.model.OrderDetail;
+import day16.db.MyConnection;
+import day16.model.OrderDetail;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

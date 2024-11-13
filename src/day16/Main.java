@@ -1,18 +1,18 @@
-package day16.sample;
+package day16;
 
 
-import day16.sample.model.Account;
-import day16.sample.model.Customer;
-import day16.sample.service.AccountService;
-import day16.sample.service.CustomerService;
-import day16.sample.service.OrderService;
-import day16.sample.service.ProductService;
-import day16.sample.utils.InputUtils;
+import day16.model.Account;
+import day16.model.Customer;
+import day16.service.AccountService;
+import day16.service.CustomerService;
+import day16.service.OrderService;
+import day16.service.ProductService;
+import day16.utils.InputUtils;
 
-import static day16.sample.utils.menu.AdminMenuUitls.LIMIT_MENU_ADMIN;
-import static day16.sample.utils.menu.AdminMenuUitls.adminMenu;
-import static day16.sample.utils.menu.UserMenuUitls.LIMIT_MENU_USER;
-import static day16.sample.utils.menu.UserMenuUitls.userMenu;
+import static day16.utils.menu.AdminMenuUitls.LIMIT_MENU_ADMIN;
+import static day16.utils.menu.AdminMenuUitls.adminMenu;
+import static day16.utils.menu.UserMenuUitls.LIMIT_MENU_USER;
+import static day16.utils.menu.UserMenuUitls.userMenu;
 
 public class Main {
 

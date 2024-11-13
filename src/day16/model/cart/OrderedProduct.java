@@ -1,4 +1,4 @@
-package day16.sample.model.cart;
+package day16.model.cart;
 
 public class OrderedProduct {
 

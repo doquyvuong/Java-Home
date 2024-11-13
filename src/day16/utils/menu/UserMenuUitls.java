@@ -1,4 +1,4 @@
-package day16.sample.utils.menu;
+package day16.utils.menu;
 
 public class UserMenuUitls {
 

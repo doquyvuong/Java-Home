@@ -1,4 +1,4 @@
-package day16.sample.model;
+package day16.model;
 
 import java.sql.Date;
 

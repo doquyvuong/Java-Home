@@ -1,6 +1,6 @@
-package day16.sample.model;
+package day16.model;
 
-import day16.sample.model.cart.Cart;
+import day16.model.cart.Cart;
 
 public class Customer {
     private int customerNumber;

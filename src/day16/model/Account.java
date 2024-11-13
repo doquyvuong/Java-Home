@@ -1,4 +1,4 @@
-package day16.sample.model;
+package day16.model;
 
 public class Account {
     private int id;
